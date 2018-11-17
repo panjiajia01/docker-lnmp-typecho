@@ -257,9 +257,8 @@ class Widget_Contents_Post_Edit extends Widget_Abstract_Contents implements Widg
 
             /** 如果它本身不是草稿, 需要删除其草稿 */
             if (!$isDraftToPublish && $this->draft) {
-                $cid = $this->draft['cid'];
-                $this->deleteDraft($cid);
-                $this->deleteFields($cid);
+                $this->deleteDraft($this->draft['cid']);
+                $this->deleteFields($this->draft['cid']);
             }
 
             /** 直接将草稿状态更改 */

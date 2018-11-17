@@ -97,8 +97,7 @@
                         return;
                     }
 
-                    t.attr('target', '_blank')
-                        .attr('rel', 'noopener noreferrer');
+                    t.attr('target', '_blank');
                 });
             }
 
